@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunaria - Wear the Moonlight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* 背景を白に変更 */
+            color: #333; /* 黒文字に統一 */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('images/lunaria-hero.jpg'); /* 保存した画像のパス */
+            background-size: cover;
+            background-position: center;
+            height: 80vh; /* 適切な高さを設定 */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 文字に影をつけて視認性向上 */
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px; /* 必要に応じて変更 */
+    }
+
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 10px;
+        }
+        .video-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .video-section iframe {
+            max-width: 100%;
+            height: 315px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+        .story-section {
+    background-image: url('images/story-background.jpg'); /* ここに画像のパスを入れる */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+    height: 70vh; /* 高さを調整 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-section h2 {
+    font-size: 42px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.story-section p {
+    font-size: 20px;
+    max-width: 800px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+.logo {
+    height: 50px; /* ロゴの高さ */
+    margin-right: 10px; /* 文字との間隔 */
+    vertical-align: middle;
+}
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-logo {
+    height: 30px;
+    display: block;
+    margin: 0 auto 10px;
+}
+    </style>
+<link rel="icon" type="image/png" href="images/favicon.png">    
+</head>
+<body>
+    <header>
+        <img src="images/Lunaria-Logo-white.png" alt="Lunaria Logo" class="logo">
+        <h1>Lunaria - Wear the Moonlight</h1>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Elegance in Every Moment</h2>
+        <p>Discover our collection inspired by the beauty of moonlight.</p>
+    </section>
+    <section id="story" class="story-section">
+        <div class="story-content">
+            <h2>The Story of Lunaria</h2>
+            <p>Inspired by the beauty of the moonlight, Lunaria brings elegance to every moment. Our designs blend celestial inspiration with timeless fashion.</p>
+        </div>
+    </section>    
+    <section id="about" class="section">
+        <h2>About Lunaria</h2>
+        <p>At Lunaria, we craft timeless apparel that blends minimalism and elegance, using sustainable materials to care for our planet.</p>
+    </section>
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="products">
+            <!-- Repeat product blocks for 20 items -->
+            <div class="product">
+                <img src="images/moonlight-dress.jpg" alt="Moonlight Dress">
+                <h3>Moonlight Dress</h3>
+                <p>$120</p>
+            </div>
+            <div class="product">
+                <img src="images/midnight-dress.jpg" alt="Midnight Dress">
+                <h3>Midnight Dress</h3>
+                <p>$115</p>
+            </div>
+            <div class="product">
+                <img src="images/neputunus-dress.jpg" alt="Neputunus Dress">
+                <h3>Neputunus Dress</h3>
+                <p>$120</p>
+            </div>
+            <div class="product">
+                <img src="images/nightfall-jacket.jpg" alt="Nightfall Jacket">
+                <h3>Nightfall Jacket</h3>
+                <p>$150</p>
+            </div>
+            <div class="product">
+                <img src="images/incandescence-jacket.jpg" alt="Incandescence Jacket">
+                <h3>Incandescence Jacket</h3>
+                <p>$180</p>
+            </div>
+            <div class="product">
+                <img src="images/silver-glow-skirt.jpg" alt="Silver Glow Skirt">
+                <h3>Silver Glow Skirt</h3>
+                <p>$90</p>
+            </div>
+            <div class="product">
+                <img src="images/stardust-skirt.jpg" alt="Stardust Skirt">
+                <h3>Stardust Skirt</h3>
+                <p>$85</p>
+            </div>
+            <div class="product">
+                <img src="images/lunar-scarf.jpg" alt="Lunar Scarf">
+                <h3>Lunar Scarf</h3>
+                <p>$40</p>
+            </div>
+            <div class="product">
+                <img src="images/stardust-blouse.jpg" alt="Stardust Blouse">
+                <h3>Stardust Blouse</h3>
+                <p>$110</p>
+            </div>
+            <div class="product">
+                <img src="images/celestial-pants.jpg" alt="Celestial Pants">
+                <h3>Celestial Pants</h3>
+                <p>$100</p>
+            </div>
+            <div class="product">
+                <img src="images/mystic-coat.jpg" alt=" Mystic Coat">
+                <h3>Mystic Coat</h3>
+                <p>$200</p>
+            </div>
+            <div class="product">
+                <img src="images/nocturne-coat.jpg" alt=" Nocturne Coat">
+                <h3>Nocturne Coat</h3>
+                <p>$220</p>
+            </div>
+            <div class="product">
+                <img src="images/saturn-overcoat.jpg" alt=" Saturn Overcoat">
+                <h3>Saturn Overcoat</h3>
+                <p>$230</p>
+            </div>
+            <div class="product">
+                <img src="images/twilight-top.jpg" alt="Twilight Top">
+                <h3>Twilight Top</h3>
+                <p>$70</p>
+            </div>
+            <div class="product">
+                <img src="images/clear_sky-top.jpg" alt="Clear Sky Top">
+                <h3>Clear Sky Top</h3>
+                <p>$70</p>
+            </div>
+            <div class="product">
+                <img src="images/nighttime-top.jpg" alt="Nighttime Top">
+                <h3>Nighttime Top</h3>
+                <p>$75</p>
+            </div>
+            <div class="product">
+                <img src="images/brilliance-tunic.jpg" alt="Brilliance Tunic">
+                <h3>Brilliance Tunic</h3>
+                <p>$85</p>
+            </div>
+            <div class="product">
+                <img src="images/night_air-tunic.jpg" alt="Night Air Tunic">
+                <h3>Night Air Tunic</h3>
+                <p>$90</p>
+            </div>
+            <div class="product">
+                <img src="images/milky_way-cardigan.jpg" alt="Milky Way Cardigan">
+                <h3>Milky Way Cardigan</h3>
+                <p>$95</p>
+            </div>
+            <div class="product">
+                <img src="images/mars-knit.jpg" alt="Mars Knit">
+                <h3>Mars Knit</h3>
+                <p>$100</p>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section id="video" class="video-section">
+        <h2>Our Inspiration</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4wP31dAUjRc?si=kJfmuqhtB1S_by8z&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <footer>
+        <img src="images/Lunaria-Logo-white.png" alt="Lunaria Logo" class="footer-logo">
+        <p>&copy; 2025 Lunaria. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
